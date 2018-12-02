@@ -10,6 +10,7 @@ public class MainController {
 
 	@GetMapping(value = "/employee")
 	public Employee getEmployee() {
+		System.out.println("==> called getEmployee()");
 		Employee emp = new Employee();
 		emp.setEmpId(1);
 		emp.setFirstName("John");
